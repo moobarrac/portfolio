@@ -7,7 +7,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import { Section } from "../types/Section";
-import { getSectionHeading } from "../utils";
+import { getSectionHeading, openURLInNewTab } from "../utils";
+import { resumeLink } from "../data/links";
 const Myself = require("../images/myself.jpeg");
 
 type FormData = {
@@ -32,20 +33,6 @@ const Contact = () => {
     setSubmitted(true);
   });
 
-  if (isSubmitted) {
-    return (
-      <div id={Section.Contact} className="lg:w-1/2 py-24">
-        {getSectionHeading(Section.Contact)}
-
-        <p className="text-lg leading-loose">
-          Thank you for your message.
-          <br />
-          I&apos;ll get back to you as soon as possible.
-        </p>
-      </div>
-    );
-  }
-
   return (
     <div id={Section.Contact} className="py-24">
       {getSectionHeading(Section.Contact)}
@@ -65,7 +52,10 @@ const Contact = () => {
             <p className="text-xs md:text-sm text-gray-700 mb-2 flex items-center gap-2">
               <MdLocationOn /> Lagos, Nigeria
             </p>
-            <Button className="mt-36 self-center" onClick={() => {}}>
+            <Button
+              className="mt-36 self-center"
+              onClick={() => openURLInNewTab(resumeLink)}
+            >
               Resume
             </Button>
           </div>
@@ -73,69 +63,88 @@ const Contact = () => {
             <img src={Myself} alt="" className="h-full w-full rounded-2xl" />
           </div>
         </div>
-        <div className="col-span-1">
-          <form onSubmit={onSubmit} className="grid gap-8">
-            <Input
-              type="text"
-              label="Full Name"
-              className="md:w-3/4"
-              hasError={!!errors.name}
-              placeholder="John Doe"
-              description={
-                errors.name?.message || "The one where you tell me your name"
-              }
-              {...register("name", {
-                required: { value: true, message: "This is a required field" },
-              })}
-            />
+        {isSubmitted ? (
+          <div className="col-span-1">
+            <p className="text-lg leading-loose">
+              Thank you for your message.
+              <br />
+              I&apos;ll get back to you as soon as possible.
+            </p>
+          </div>
+        ) : (
+          <div className="col-span-1">
+            <form onSubmit={onSubmit} className="grid gap-8">
+              <Input
+                type="text"
+                label="Full Name"
+                className="md:w-3/4"
+                hasError={!!errors.name}
+                placeholder="John Doe"
+                description={
+                  errors.name?.message || "The one where you tell me your name"
+                }
+                {...register("name", {
+                  required: {
+                    value: true,
+                    message: "This is a required field",
+                  },
+                })}
+              />
 
-            <Input
-              type="email"
-              className="md:w-3/4"
-              label="Email Address"
-              hasError={!!errors.email}
-              placeholder="abc@example.com"
-              description={
-                errors.email?.message ||
-                "The one where you tell me how I can contact you back"
-              }
-              {...register("email", {
-                required: { value: true, message: "This is a required field" },
-                pattern: {
-                  value: /^\S+@\S+\.\S+$/,
-                  message: "Please enter a valid email address",
-                },
-              })}
-            />
+              <Input
+                type="email"
+                className="md:w-3/4"
+                label="Email Address"
+                hasError={!!errors.email}
+                placeholder="abc@example.com"
+                description={
+                  errors.email?.message ||
+                  "The one where you tell me how I can contact you back"
+                }
+                {...register("email", {
+                  required: {
+                    value: true,
+                    message: "This is a required field",
+                  },
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: "Please enter a valid email address",
+                  },
+                })}
+              />
 
-            <Input
-              type="textarea"
-              label="Message"
-              hasError={!!errors.message}
-              placeholder="Type your message here"
-              description={
-                errors.message?.message ||
-                "The one where you tell me what I can do to help you"
-              }
-              {...register("message", {
-                required: { value: true, message: "This is a required field" },
-                minLength: {
-                  value: 10,
-                  message: "Your message must be at least 10 characters long",
-                },
-              })}
-            />
-          </form>
+              <Input
+                type="textarea"
+                label="Message"
+                hasError={!!errors.message}
+                placeholder="Type your message here"
+                description={
+                  errors.message?.message ||
+                  "The one where you tell me what I can do to help you"
+                }
+                {...register("message", {
+                  required: {
+                    value: true,
+                    message: "This is a required field",
+                  },
+                  minLength: {
+                    value: 10,
+                    message: "Your message must be at least 10 characters long",
+                  },
+                })}
+              />
+            </form>
 
-          <Button
-            icon={FaPaperPlane}
-            className="mt-8"
-            onClick={onSubmit}
-            disabled={submitting}
-          >
-            Send Message
-          </Button>
-        </div>
+            <Button
+              icon={FaPaperPlane}
+              className="mt-8"
+              onClick={onSubmit}
+              disabled={submitting}
+            >
+              Send Message
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import Lottie from "react-lottie";
 import data from "../images/99312-developer-skills.json";
 import Profiles from "../components/Profiles";
 import Button from "../components/Button";
+import { openURLInNewTab } from "../utils";
+import { resumeLink } from "../data/links";
 
 const Header: React.FC = () => {
   const defaultOptions = {
@@ -30,7 +32,7 @@ const Header: React.FC = () => {
         </div>
         <Profiles />
         <div className="flex gap-8">
-          <Button onClick={() => {}}>Resume</Button>
+          <Button onClick={() => openURLInNewTab(resumeLink)}>Resume</Button>
         </div>
       </div>
       <div className="col-span-1 bg-black h-full flex items-center justify-center rounded-3xl">
