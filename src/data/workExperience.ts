@@ -33,10 +33,10 @@ export const workExperiences: WorkExperienceTypes[] = [
     id: 3,
     name: "Seal World Communications",
     period: { start: "March 2018", end: "July 2020" },
-    position: "Web Developer Intern",
+    position: "Web Developer",
     location: "Lagos, Nigeria",
     summary:
       "As a Intern in Seal World Communication, I had the oppurtunity to gain hands-on experience in web development, worked on real-world projects, collaborated with a team, learned from experienced developers.",
-    keyFocus: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    keyFocus: ["HTML", "CSS", "Javascript", "React", "Bootstrap"],
   },
 ];
