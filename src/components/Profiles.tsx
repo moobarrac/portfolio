@@ -1,7 +1,6 @@
 import React from "react";
 import type { IconType } from "react-icons";
 import {
-  FaFacebookF,
   FaGithubAlt,
   FaInstagram,
   FaLinkedinIn,
@@ -40,12 +39,6 @@ const profiles: Profile[] = [
     icon: FaGithubAlt,
     link: links.github,
     className: "bg-[#211f1f]",
-  },
-  {
-    title: "Facebook",
-    icon: FaFacebookF,
-    link: links.facebook,
-    className: "bg-[#3b5998]",
   },
 ];
 const Profiles = () => {

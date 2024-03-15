@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         </h2>
         <div>
           <h3 className=" text-base md:text-2xl text-[#0D47A1] font-code">
-            A frontend Developer
+            A frontend Engineer
           </h3>
         </div>
         <Profiles />

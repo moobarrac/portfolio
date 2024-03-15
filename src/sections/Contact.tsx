@@ -9,7 +9,7 @@ import { AiFillPhone } from "react-icons/ai";
 import { Section } from "../types/Section";
 import { getSectionHeading, openURLInNewTab } from "../utils";
 import { resumeLink } from "../data/links";
-const Myself = require("../images/myself.jpeg");
+import Profiles from "../components/Profiles";
 
 type FormData = {
   name: string;
@@ -38,7 +38,7 @@ const Contact = () => {
       {getSectionHeading(Section.Contact)}
       <div className="grid md:grid-cols-2 gap-6">
         <div className="col-span-1 grid lg:grid-cols-2   h-auto bg-black rounded-2xl gap-4 p-4 lg:p-6">
-          <div className="col-span-1 bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 flex flex-col">
+          <div className="col-span-2 bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 flex flex-col">
             <h2 className="text-lg md:text-2xl font-bold mb-4">
               Mubarak Abdulwahab
             </h2>
@@ -52,15 +52,14 @@ const Contact = () => {
             <p className="text-xs md:text-sm text-gray-700 mb-2 flex items-center gap-2">
               <MdLocationOn /> Lagos, Nigeria
             </p>
+            <br />
+            <Profiles />
             <Button
               className="mt-36 self-center"
               onClick={() => openURLInNewTab(resumeLink)}
             >
               Resume
             </Button>
-          </div>
-          <div className="hidden md:block col-span-1  h-full transform hover:scale-105 transition duration-300">
-            <img src={Myself} alt="" className="h-full w-full rounded-2xl" />
           </div>
         </div>
         {isSubmitted ? (

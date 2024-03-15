@@ -17,12 +17,30 @@ export const workExperiences: WorkExperienceTypes[] = [
     location: "Lagos, Nigeria",
     summary:
       "As part of the Data/Claims Team, my role involve collaborating with the claims team to understand the requirements and workflows of the claims process. I design and implement user interfaces and functionalities for the claims management system.",
-    keyFocus: ["React", "Typescript", "Tailwind CSS", "NextJs", "Git/GitHub"],
+    keyFocus: [
+      "React",
+      "Typescript",
+      "Tailwind CSS",
+      "NextJs",
+      "Git/GitHub",
+      "Microservices",
+    ],
   },
+
   {
     id: 2,
+    name: "Patricia",
+    period: { start: "Sept 2021", end: "May 2022" },
+    position: "Frontend Engineer",
+    location: "Lagos, Nigeria",
+    summary:
+      "worked on real-world projects, learned from experienced developers.",
+    keyFocus: ["React", "Bootstrap", "Typescript", "Redux"],
+  },
+  {
+    id: 3,
     name: "Universal Horizon Limited",
-    period: { start: "August 2020", end: "March 2022" },
+    period: { start: "August 2020", end: "Sept 2021" },
     position: "Frontend Developer",
     location: "Lagos, Nigeria",
     summary:
@@ -30,9 +48,9 @@ export const workExperiences: WorkExperienceTypes[] = [
     keyFocus: ["React", "Redux", "CSS", "Git/GitHub"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Seal World Communications",
-    period: { start: "March 2018", end: "July 2020" },
+    period: { start: "March 2018", end: "June 2020" },
     position: "Web Developer",
     location: "Lagos, Nigeria",
     summary:

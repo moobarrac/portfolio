@@ -1,4 +1,4 @@
-import { TbBrandReactNative, TbCodeDots } from "react-icons/tb";
+// import { TbBrandReactNative } from "react-icons/tb";
 import {
   SiNextdotjs,
   SiRedux,
@@ -13,10 +13,11 @@ import {
   SiGit,
   SiHtml5,
   SiFirebase,
-  SiThealgorithms,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import { IconType } from "react-icons";
-
 
 type Skill = {
   id: number;
@@ -25,7 +26,7 @@ type Skill = {
   className?: string;
 };
 
-export  const skills: Skill[] = [
+export const skills: Skill[] = [
   {
     id: 1,
     icon: SiReact,
@@ -62,12 +63,12 @@ export  const skills: Skill[] = [
     name: "Typescript",
     className: "hover:bg-[#007acc]",
   },
-  {
-    id: 7,
-    icon: TbBrandReactNative,
-    name: "React Native",
-    className: "hover:bg-[#6180fb]",
-  },
+  // {
+  //   id: 7,
+  //   icon: TbBrandReactNative,
+  //   name: "React Native",
+  //   className: "hover:bg-[#6180fb]",
+  // },
   {
     id: 8,
     icon: SiCss3,
@@ -118,14 +119,21 @@ export  const skills: Skill[] = [
   },
   {
     id: 16,
-    icon: TbCodeDots,
-    name: "Problem Solving",
+    icon: SiNodedotjs,
+    name: "Node JS",
     className: "hover:bg-[#ee4b4b]",
   },
   {
     id: 17,
-    icon: SiThealgorithms,
-    name: "Data Structures",
+    icon: SiExpress,
+    name: "Express JS",
     className: "hover:bg-[#3ab71e]",
+  },
+
+  {
+    id: 18,
+    icon: SiMongodb,
+    name: "MongoDB",
+    className: "hover:bg-[#FFA611]",
   },
 ];
