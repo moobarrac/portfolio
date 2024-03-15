@@ -16,7 +16,7 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
     summary:
-      "As part of the Data/Claims Team, my role involve collaborating with the claims team to understand the requirements and workflows of the claims process. I design and implement user interfaces and functionalities for the claims management system.",
+      "At Reliance Health, in my role as a Frontend Engineer within the Data/Claims Team, I am integral in translating the needs and workflows of the claims team into a functional and user-friendly claims management system, utilizing my expertise to design and implement effective UI/UX.",
     keyFocus: [
       "React",
       "Typescript",
@@ -34,7 +34,7 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
     summary:
-      "worked on real-world projects, learned from experienced developers.",
+      "During my tenure at Patricia as a Frontend Engineer, I immersed myself in real-world projects, enhancing my skills through collaboration with seasoned developers and contributing to the team with my React and Typescript expertise..",
     keyFocus: ["React", "Bootstrap", "Typescript", "Redux"],
   },
   {
@@ -44,7 +44,7 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Frontend Developer",
     location: "Lagos, Nigeria",
     summary:
-      "As part of the Support team, I was tasked to build user engagement features, tackle user support issues and incidents faced across the company.",
+      "As a Frontend Developer with Universal Horizon Limited, I played a crucial role in the Support team, focusing on developing user engagement features and addressing support issues, thereby enhancing user experience and operational efficiency.",
     keyFocus: ["React", "Redux", "CSS", "Git/GitHub"],
   },
   {
@@ -54,7 +54,14 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Web Developer",
     location: "Lagos, Nigeria",
     summary:
-      "As a Intern in Seal World Communication, I had the oppurtunity to gain hands-on experience in web development, worked on real-world projects, collaborated with a team, learned from experienced developers.",
-    keyFocus: ["HTML", "CSS", "Javascript", "React", "Bootstrap"],
+      "My internship at Seal World Communications was a formative experience, where I delved into web development, engaging in real-world projects, team collaboration, and learning from experienced developers, which laid a strong foundation for my career.",
+    keyFocus: [
+      " Fundamental web technologies",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Bootstrap",
+    ],
   },
 ];
