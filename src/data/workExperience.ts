@@ -29,7 +29,7 @@ export const workExperiences: WorkExperienceTypes[] = [
 
   {
     id: 2,
-    name: "Patricia",
+    name: "Patricia Technologies Limited",
     period: { start: "Sept 2021", end: "May 2022" },
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
