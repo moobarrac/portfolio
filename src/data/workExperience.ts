@@ -10,9 +10,26 @@ export type WorkExperienceTypes = {
 
 export const workExperiences: WorkExperienceTypes[] = [
   {
+    id: 5,
+    name: "World Leaves, USA",
+    period: { start: "November 2023", end: "Present" },
+    position: "Software Engineer",
+    location: "California, USA",
+    summary:
+      "In my role at World Leaves, I am focused on building and optimizing front-end solutions using React and NextJS, integrating real-time communication between the front-end and back-end using REST and Socket.io, and maintaining code quality through TypeScript.",
+    keyFocus: [
+      "React",
+      "NextJS",
+      "Typescript",
+      "Socket.io",
+      "NodeJS",
+      "PostgresQL",
+    ],
+  },
+  {
     id: 1,
     name: "Reliance Health",
-    period: { start: "March 2022", end: "Present" },
+    period: { start: "March 2022", end: "November 2023" },
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
     summary:

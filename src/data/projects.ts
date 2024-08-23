@@ -1,16 +1,49 @@
 import type { Project } from "../types/Section";
 const PodOfCast = require("../images/podofcast.png");
-const Youtube = require("../images/youtube.png");
 const MusicPlayer = require("../images/music-player.png");
 const ShoppingHub = require("../images/shoppinghub.png");
+const HorizonApp = require("../images/horizon.png");
 const Engineering = require("../images/engineering.png");
 const MovieApp = require("../images/movie-app.png");
+const CarePlusApp = require("../images/health.png");
 const Foodie = require("../images/foodie.png");
 const SpaceX = require("../images/spacex.png");
 
 const projectsList: Project[] = [
   {
     id: 1,
+    image: HorizonApp,
+    name: "Horizon",
+    summary:
+      "A modern banking application that enables users to manage multiple bank accounts, view transaction history, and connect with financial institutions using Plaid and Upright APIs. Built with Next.js, React, and Tailwind CSS for a seamless user experience.",
+    tags: [
+      "banking",
+      "typescript",
+      "nextjs",
+      "react",
+      "tailwindcss",
+      "plaid",
+      "appwrite",
+    ],
+    link: {
+      github: "https://github.com/moobarrac/horizon",
+      web: "https://horizon-moon.vercel.app/",
+    },
+  },
+  {
+    id: 2,
+    image: CarePlusApp,
+    name: "CarePulse",
+    summary:
+      "A healthcare management system that enables users to book appointments with doctors by filling out necessary information. Doctors can review these requests, accept appointments, and schedule sessions with patients at convenient times. The application provides a seamless experience for both patients and healthcare providers.",
+    tags: ["healthcare", "typescript", "nextjs", "react", "tailwindcss"],
+    link: {
+      github: "https://github.com/moobarrac/health_mg",
+      web: "https://health-mg.vercel.app/",
+    },
+  },
+  {
+    id: 3,
     image: Foodie,
     name: "Foodie Place",
     summary:
@@ -22,7 +55,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 2,
+    id: 4,
     image: SpaceX,
     name: "Space X",
     summary:
@@ -34,7 +67,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 3,
+    id: 5,
     image: MusicPlayer,
     name: "Music Player",
     summary:
@@ -46,7 +79,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 4,
+    id: 6,
     image: PodOfCast,
     name: "Pod of Cast",
     summary:
@@ -58,27 +91,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 5,
-    image: Youtube,
-    name: "Youtube Clone",
-    summary:
-      "Youtube Clone, a meticulously crafted replica that offers a familiar yet fresh video browsing and streaming experience, capturing the essence of the original Youtube platform.",
-    tags: [
-      "youtube",
-      "video",
-      "streaming",
-      "react",
-      "typescript",
-      "tailwindcss",
-      "clone",
-    ],
-    link: {
-      web: "https://youtube-clobe.vercel.app/",
-      github: "https://github.com/moobarrac/youtube-clobe",
-    },
-  },
-  {
-    id: 6,
+    id: 7,
     image: MovieApp,
     name: "Upcoming Movies",
     summary:
@@ -90,7 +103,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 7,
+    id: 8,
     image: ShoppingHub,
     name: "Shopping Hub",
     summary:
@@ -101,7 +114,7 @@ const projectsList: Project[] = [
     },
   },
   {
-    id: 8,
+    id: 9,
     image: Engineering,
     name: "My Engineering Help",
     summary:
