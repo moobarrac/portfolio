@@ -13,8 +13,8 @@ export const workExperiences: WorkExperienceTypes[] = [
     id: 5,
     name: "World Leaves, USA",
     period: { start: "November 2023", end: "Present" },
-    position: "Software Engineer",
-    location: "California, USA",
+    position: "Senior Software Engineer",
+    location: "Denver, USA",
     summary:
       "In my role at World Leaves, I am focused on building and optimizing front-end solutions using React and NextJS, integrating real-time communication between the front-end and back-end using REST and Socket.io, and maintaining code quality through TypeScript.",
     keyFocus: [
@@ -43,11 +43,28 @@ export const workExperiences: WorkExperienceTypes[] = [
       "Microservices",
     ],
   },
-
+  {
+    id: 6,
+    name: "KrownPay",
+    period: { start: "Feb 2022", end: "May 2023" },
+    position: "Full Stack Engineer",
+    location: "Sydney, Australia",
+    summary:
+      "During my time at KrownPay, I developed and maintained cryptocurrency payment gateways, ensuring secure transactions and wallet integration using Node.js, Express, and MongoDB. On the frontend, I implemented interfaces with React, Context API, and Redux to provide businesses with seamless tools for tracking payments and generating invoices. ",
+    keyFocus: [
+      "React",
+      "Context API",
+      "Typescript",
+      "Redux",
+      "Node",
+      "Express",
+      "JWT",
+    ],
+  },
   {
     id: 2,
     name: "Patricia Technologies Limited",
-    period: { start: "Sept 2021", end: "May 2022" },
+    period: { start: "Apr 2021", end: "Feb 2022" },
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
     summary:
@@ -57,7 +74,7 @@ export const workExperiences: WorkExperienceTypes[] = [
   {
     id: 3,
     name: "Universal Horizon Limited",
-    period: { start: "August 2020", end: "Sept 2021" },
+    period: { start: "Aug 2019", end: "Apr 2021" },
     position: "Frontend Developer",
     location: "Lagos, Nigeria",
     summary:
@@ -67,7 +84,7 @@ export const workExperiences: WorkExperienceTypes[] = [
   {
     id: 4,
     name: "Seal World Communications",
-    period: { start: "March 2018", end: "June 2020" },
+    period: { start: "March 2018", end: "June 2019" },
     position: "Web Developer",
     location: "Lagos, Nigeria",
     summary:
