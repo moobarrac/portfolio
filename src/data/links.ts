@@ -6,6 +6,6 @@ const links = {
 };
 
 export const resumeLink =
-  "https://docs.google.com/document/d/1NNDgDpnWwHvYFjfaR9uQFrS5pBbGtfPV/edit?usp=sharing&ouid=107424054964790139525&rtpof=true&sd=true";
+  "https://docs.google.com/document/d/13CLUKZ6DfQWJKb-Y4Nm7f34vv2R7bBla/edit?usp=sharing&ouid=107424054964790139525&rtpof=true&sd=true";
 
 export default links;
