@@ -1,13 +1,13 @@
 import type { Project } from "../types/Section";
-const PodOfCast = require("../images/podofcast.png");
-const MusicPlayer = require("../images/music-player.png");
-const ShoppingHub = require("../images/shoppinghub.png");
-const HorizonApp = require("../images/horizon.png");
-const Engineering = require("../images/engineering.png");
-const MovieApp = require("../images/movie-app.png");
-const CarePlusApp = require("../images/health.png");
-const Foodie = require("../images/foodie.png");
-const SpaceX = require("../images/spacex.png");
+import PodOfCast from "../images/podofcast.png";
+import MusicPlayer from "../images/music-player.png";
+import ShoppingHub from "../images/shoppinghub.png";
+import HorizonApp from "../images/horizon.png";
+import Engineering from "../images/engineering.png";
+import MovieApp from "../images/movie-app.png";
+import CarePlusApp from "../images/health.png";
+import Foodie from "../images/foodie.png";
+import SpaceX from "../images/spacex.png";
 
 const projectsList: Project[] = [
   {

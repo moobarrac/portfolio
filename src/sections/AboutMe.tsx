@@ -1,7 +1,6 @@
-import React from "react";
 import { Section } from "../types/Section";
 import { getSectionHeading } from "../utils";
-const AboutMeImg = require("../images/aboutme.jpg");
+import AboutMeImg from "../images/aboutme.jpg";
 
 const AboutMe = () => (
   <div id={Section.AboutMe} className="py-12">
