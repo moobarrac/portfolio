@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import data from "../images/99312-developer-skills.json";
 import Profiles from "../components/Profiles";
 import Button from "../components/Button";
@@ -7,15 +7,6 @@ import { openURLInNewTab } from "../utils";
 import { resumeLink } from "../data/links";
 
 const Header: React.FC = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: data,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <div
       id="header"
@@ -37,7 +28,11 @@ const Header: React.FC = () => {
       </div>
       <div className="col-span-1 bg-black h-full flex items-center justify-center rounded-3xl">
         <div className="w-72 md:w-96 h-72 md:h-96  lg:ml-24 ">
-          <Lottie options={defaultOptions} width={"100%"} height={"100%"} />
+          <Lottie 
+            animationData={data} 
+            loop={true}
+            style={{ width: "100%", height: "100%" }}
+          />
         </div>
       </div>
     </div>
