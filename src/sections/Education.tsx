@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import { Section } from "../types/Section";
 import { getSectionHeading } from "../utils";
@@ -39,7 +38,7 @@ const EducationTimeline = () => {
       {getSectionHeading(Section.Education)}
 
       <div className="flex flex-col">
-        {educations.map((data, index) => (
+        {educations.map((data) => (
           <Education key={data.id} data={data} />
         ))}
       </div>

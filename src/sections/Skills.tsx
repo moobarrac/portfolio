@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "../types/Section";
 import { getSectionHeading } from "../utils";
 import { skills } from "../data/skills";

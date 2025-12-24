@@ -1,4 +1,3 @@
-import React from "react";
 import { AboutMe, Contact, Header, Music, Projects, Skills } from "./sections";
 import WorkExperienceTimeline from "./sections/WorkExperience";
 import EducationTimeline from "./sections/Education";

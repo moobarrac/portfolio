@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import { Section } from "../types/Section";
 import { getSectionHeading } from "../utils";
@@ -45,7 +44,7 @@ const WorkExperienceTimeline = () => {
       {getSectionHeading(Section.WorkExperience)}
 
       <div className="flex flex-col">
-        {workExperiences.map((data, index) => (
+        {workExperiences.map((data) => (
           <WorkExperience key={data.id} data={data} />
         ))}
       </div>

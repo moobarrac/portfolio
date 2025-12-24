@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/Button";
 import ImageLink from "../components/ImageLink";
 import links from "../data/links";
