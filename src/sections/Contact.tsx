@@ -36,31 +36,34 @@ const Contact = () => {
   return (
     <div id={Section.Contact} className="py-24">
       {getSectionHeading(Section.Contact)}
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="col-span-1 grid lg:grid-cols-2   h-auto bg-black rounded-2xl gap-4 p-4 lg:p-6">
-          <div className="col-span-2 bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 flex flex-col">
-            <h2 className="text-lg md:text-2xl font-bold mb-4">
-              Mubarak Abdulwahab
-            </h2>
-            <p className="text-xs text- md:text-sm text-gray-700 mb-2 flex items-center gap-2">
-              <MdEmail />
-              wahabajibola01@gmail.com
-            </p>
-            <p className="text-xs md:text-sm text-gray-700 mb-2 flex items-center gap-2">
-              <AiFillPhone /> +23486690112
-            </p>
-            <p className="text-xs md:text-sm text-gray-700 mb-2 flex items-center gap-2">
-              <MdLocationOn /> Lagos, Nigeria
-            </p>
-            <br />
-            <Profiles />
-            <Button
-              className="mt-36 self-center"
-              onClick={() => openURLInNewTab(resumeLink)}
-            >
-              Resume
-            </Button>
-          </div>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-bg-elevated border border-line rounded-2xl p-6 lg:p-8 flex flex-col">
+          <h3 className="text-lg md:text-2xl font-bold mb-6">
+            Mubarak Abdulwahab
+          </h3>
+          <a
+            href="mailto:wahabajibola01@gmail.com"
+            className="text-sm text-fg-muted mb-3 flex items-center gap-3 hover:text-accent transition-colors"
+          >
+            <MdEmail aria-hidden="true" />
+            wahabajibola01@gmail.com
+          </a>
+          <a
+            href="tel:+23486690112"
+            className="text-sm text-fg-muted mb-3 flex items-center gap-3 hover:text-accent transition-colors"
+          >
+            <AiFillPhone aria-hidden="true" /> +234 8669 0112
+          </a>
+          <p className="text-sm text-fg-muted mb-6 flex items-center gap-3">
+            <MdLocationOn aria-hidden="true" /> Lagos, Nigeria
+          </p>
+          <Profiles />
+          <Button
+            className="mt-auto pt-8 self-start"
+            onClick={() => openURLInNewTab(resumeLink)}
+          >
+            Resume
+          </Button>
         </div>
         {isSubmitted ? (
           <div className="col-span-1">
@@ -72,7 +75,7 @@ const Contact = () => {
           </div>
         ) : (
           <div className="col-span-1">
-            <form onSubmit={onSubmit} className="grid gap-8">
+            <form onSubmit={onSubmit} className="grid gap-8" noValidate>
               <Input
                 type="text"
                 label="Full Name"
@@ -132,16 +135,16 @@ const Contact = () => {
                   },
                 })}
               />
-            </form>
 
-            <Button
-              icon={FaPaperPlane}
-              className="mt-8"
-              onClick={onSubmit}
-              disabled={submitting}
-            >
-              Send Message
-            </Button>
+              <Button
+                type="submit"
+                icon={FaPaperPlane}
+                className="mt-2"
+                disabled={submitting}
+              >
+                Send Message
+              </Button>
+            </form>
           </div>
         )}
       </div>

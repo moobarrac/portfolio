@@ -1,5 +1,5 @@
-import {  FaDev, FaPaperPlane, FaTools } from "react-icons/fa";
-import { MdInfo, MdMusicNote, MdPerson, MdSchool, MdWork } from "react-icons/md";
+import { FaDev, FaPaperPlane, FaTools } from "react-icons/fa";
+import { MdMusicNote, MdPerson, MdSchool, MdWork } from "react-icons/md";
 import { Section, SectionArray, SectionMap } from "../types/Section";
 
 const sectionsList: SectionMap = {
@@ -30,10 +30,6 @@ const sectionsList: SectionMap = {
   [Section.Contact]: {
     icon: FaPaperPlane,
     title: "Contact",
-  },
-  [Section.AboutRotW]: {
-    icon: MdInfo,
-    title: "About Resume on the Web",
   },
 };
 

@@ -8,7 +8,6 @@ export enum Section {
   "WorkExperience" = "work-experience",
   "Music" = "music",
   "Contact" = "contact",
-  "AboutRotW" = "aboutrotw",
 }
 
 export type SectionMap = Record<Section, { icon: IconType; title: string }>;
@@ -19,21 +18,15 @@ export type SectionArray = {
   icon: IconType;
 }[];
 
-
 export type Project = {
   id: number;
   image: string;
   name: string;
   summary: string;
   tags: string[];
+  featured?: boolean;
   link?: {
     web?: string;
     github?: string;
   };
-};
-
-export type Achievement = {
-  id: number;
-  title: string;
-  subtitle: string;
 };

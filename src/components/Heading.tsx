@@ -6,12 +6,11 @@ type Props = {
 };
 
 const Heading: React.FC<Props> = ({ icon: Icon, children }) => (
-  <div className="flex items-center gap-2 mb-8 transition-colors">
-    {Icon && <Icon size={14} />}
-
-    <span className="font-bold uppercase text-xl relative -bottom-px font-code">
+  <div className="flex items-center gap-3 mb-10">
+    {Icon && <Icon size={20} className="text-accent" />}
+    <h2 className="font-code font-bold uppercase tracking-wide text-2xl md:text-3xl">
       {children}
-    </span>
+    </h2>
   </div>
 );
 

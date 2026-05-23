@@ -13,17 +13,19 @@ export const workExperiences: WorkExperienceTypes[] = [
     id: 1,
     name: "Reliance Health",
     period: { start: "March 2022", end: "Present" },
-    position: "Frontend Engineer",
+    position: "Full-stack Engineer",
     location: "Lagos, Nigeria",
     summary:
-      "Frontend Engineer on the Data/Claims team, building a scalable claims management experience with React, Next.js, and TypeScript. I translate complex claims workflows into fast, accessible UI and reusable components while partnering closely with product, design, and backend teams.",
+      "Full-stack engineer at an HMO platform serving African markets. Owned end-to-end delivery of Benefits & Exclusions, Diagnosis Standardization, and Pre-Authorization automation — Node.js/Express/Sequelize services against PostgreSQL, plus React/Next.js/TypeScript microfrontends with a shared Tailwind component system used across internal products.",
     keyFocus: [
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "PostgreSQL",
       "React",
-      "Typescript",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "NextJs",
-      "Git/GitHub",
-      "Microservices",
     ],
   },
   {
@@ -33,14 +35,15 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Software Engineer",
     location: "USA",
     summary:
-      "Full-stack Software Engineer building real-time, responsive web experiences with React, Next.js, and TypeScript. I integrated REST APIs and Socket.IO for live updates, improved performance, and maintained clean, maintainable code across the frontend and backend.",
+      "Backend lead on a payments and gaming platform. Owned the wallet engine — transactions, balance tracking, refunds, webhook handling — with concurrency and idempotency safeguards; REST APIs with RBAC for admin and affiliate roles; an auth flow rewrite (session security, token refresh); real-time multiplayer via Socket.IO + Express + Sequelize; structured logging, Sentry, and uptime monitoring. Also shipped the React/Tailwind admin and finance dashboards on top.",
     keyFocus: [
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "Socket.IO",
       "React",
-      "NextJS",
-      "Typescript",
-      "Socket.io",
-      "NodeJS",
-      "PostgresQL",
+      "Tailwind CSS",
+      "Sentry",
     ],
   },
   {
@@ -50,8 +53,8 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Frontend Engineer",
     location: "Lagos, Nigeria",
     summary:
-      "Frontend Engineer building and maintaining user-facing interfaces with React and TypeScript, collaborating closely with engineers and product stakeholders. I delivered responsive UI and improved state driven workflows using Redux and Bootstrap-based components.",
-    keyFocus: ["React", "Bootstrap", "TypeScript", "Redux"],
+      "Frontend engineer on customer and admin portals. Integrated multiple third-party payment gateways, built a reusable React + Material UI component library shared across surfaces, and partnered with backend on token auth, session management, and client-side encryption for sensitive transaction data.",
+    keyFocus: ["React", "TypeScript", "Material UI", "Redux"],
   },
   {
     id: 4,
@@ -60,7 +63,7 @@ export const workExperiences: WorkExperienceTypes[] = [
     position: "Frontend Developer",
     location: "Lekki, Nigeria",
     summary:
-      "Frontend Developer on the Support team, building engagement features and improving existing React interfaces to enhance user experience and operational workflows. I handled bug fixes, UI improvements, and state management updates using React, Redux, and Git.",
-    keyFocus: ["React", "Redux", "CSS", "Git/GitHub"],
+      "Frontend developer building and maintaining React applications: new feature work, legacy refactors for maintainability and readability, and performance tuning on existing surfaces. Worked closely with backend, QA, and design.",
+    keyFocus: ["React", "JavaScript", "CSS"],
   },
 ];

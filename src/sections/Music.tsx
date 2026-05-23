@@ -8,19 +8,15 @@ const Music = () => (
     {getSectionHeading(Section.Music)}
 
     <div className="grid md:grid-cols-3 gap-12">
-      <div className="max-w-full prose prose-sm md:prose-base prose-[#848484]">
+      <div className="max-w-full text-sm md:text-base leading-relaxed text-fg-muted space-y-4">
         <p>
-          If you&apos;ve read about my profile so far and you found it
-          interesting, studies show that knowing what type of music a person
-          listens to would say a lot about them.
+          If knowing someone&apos;s music tells you something about them,
+          here&apos;s mine.
         </p>
 
         <p>
-          Also, I&apos;ve been known for my good taste in music and I&apos;ve
-          always wanted to share the latest and greatest hits through an easy
-          medium, so here&apos;s a Spotify Playlist I&apos;ve created called
-          Everyday Tracks: A dynamic playlist of what&apos;s on my daily roster
-          of music.
+          Everyday Tracks is the Spotify playlist I keep current — what&apos;s
+          actually on rotation, not a curated highlight reel.
         </p>
 
         <Button
@@ -36,13 +32,13 @@ const Music = () => (
         </Button>
       </div>
       <iframe
-        title="My Music"
+        title="Everyday Tracks playlist on Spotify"
         src="https://open.spotify.com/embed/playlist/320UFAuOmWray0bYwGHZ0z?utm_source=generator&theme=0"
         width="100%"
-        height="512"
+        height="380"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-        className=" md:block rounded col-span-2"
+        className="rounded-md col-span-2"
       />
     </div>
   </div>

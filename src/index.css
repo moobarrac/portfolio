@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@300;400;500;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 840px) {
-  #header {
-    grid-template-columns: 1fr;
-  }
+html,
+body {
+  background-color: #0a0a0a;
+  color: #fafafa;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus-visible {
+  outline: 2px solid #4FC3F7;
+  outline-offset: 2px;
+  border-radius: 2px;
 }

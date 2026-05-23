@@ -5,16 +5,18 @@ export type EducationTypes = {
   study: string;
   location: string;
   period: { start: string; end: string };
+  note?: string;
 };
 
 export const educations: EducationTypes[] = [
   {
     id: 1,
     institution: "Bayero University, Kano",
-    degree: "Bachelor's Degree",
+    degree: "B.Eng",
     study: "Mechanical Engineering",
     location: "Kano, Nigeria",
-    period: { start: "2017", end: "2022" },
+    period: { start: "2017", end: "2023" },
+    note: "GPA 4.36 / 5.0",
   },
   {
     id: 2,

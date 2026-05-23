@@ -24,23 +24,21 @@ const Input = React.forwardRef<RefProps, Props>(
     },
     ref
   ) => {
-    const inputClassName = `
-      "text-base bg-transparent border-2 border-slate-300 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-700 dark:focus:border-slate-300 transition-[border]",
-      ${
-        hasError &&
-        "animate__animated animate__shakeX border-red-300 dark:border-red-700 focus:border-red-700 dark:focus:border-red-300"
-      }
-    `;
+    const base =
+      "text-base bg-bg-elevated border border-line text-fg px-4 py-3 rounded-md placeholder:text-fg-subtle focus:outline-none focus:border-accent transition-colors";
+    const error = hasError ? "border-red-500 focus:border-red-500" : "";
+    const inputClassName = `${base} ${error}`;
 
     return (
       <label className={`flex flex-col gap-2 ${className}`}>
-        <span className="font-bold">{label}</span>
+        <span className="font-semibold text-sm">{label}</span>
 
         {type === "textarea" ? (
           <textarea
             ref={ref}
             rows={4}
             placeholder={placeholder}
+            aria-invalid={hasError || undefined}
             className={inputClassName}
             {...props}
           />
@@ -49,12 +47,15 @@ const Input = React.forwardRef<RefProps, Props>(
             ref={ref}
             type={type}
             placeholder={placeholder}
+            aria-invalid={hasError || undefined}
             className={inputClassName}
             {...props}
           />
         )}
 
-        <span className={`text-xs ${hasError && "text-red-500"}`}>
+        <span
+          className={`text-xs ${hasError ? "text-red-400" : "text-fg-subtle"}`}
+        >
           {description}
         </span>
       </label>
