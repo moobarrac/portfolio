@@ -21,10 +21,10 @@ import {
   SiGraphql,
   SiJest,
   SiTestinglibrary,
-  SiAmazon,
   SiDocker,
   SiPostman,
 } from "react-icons/si";
+import { FaAmazon } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 type Skill = {
@@ -53,7 +53,7 @@ export const skills: Skill[] = [
   { id: 17, icon: SiMongodb, name: "MongoDB" },
   { id: 18, icon: SiSocketdotio, name: "Socket.IO" },
   { id: 19, icon: SiGraphql, name: "GraphQL" },
-  { id: 20, icon: SiAmazon, name: "AWS" },
+  { id: 20, icon: FaAmazon, name: "AWS" },
   { id: 21, icon: SiDocker, name: "Docker" },
   { id: 22, icon: SiPostman, name: "Postman" },
   { id: 23, icon: SiGit, name: "Git" },

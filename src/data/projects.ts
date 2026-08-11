@@ -1,7 +1,6 @@
 import type { Project } from "../types/Section";
 import PolyTrainer from "../images/polytrainer.webp";
 import Stenzi from "../images/stenzi.webp";
-import PodOfCast from "../images/podofcast.webp";
 import HorizonApp from "../images/horizon.webp";
 import CarePlusApp from "../images/health.webp";
 import FintechDashboard from "../images/fintech-dashboard.webp";
