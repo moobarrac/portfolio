@@ -48,6 +48,7 @@ const projectsList: Project[] = [
     featured: true,
     link: {
       web: "https://kolo.moobarrac.workers.dev/",
+      github: "https://github.com/moobarrac/kolo",
     },
   },
   {
